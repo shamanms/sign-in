@@ -35,8 +35,16 @@ header span {
     font-size: 1.2rem;
     float: right;
 }
+header span:before {
+    content: '';
+    display: inline-block;
+    background: url(../img/icon-lock-header-gray.png) no-repeat;
+    height: 1.3rem;
+    width: 1.3rem;
+}
 .sign-main {
     padding: 9rem 7rem;
+    background: url(../img/bg-signin-divider.png) no-repeat 50%;
 }
 .sign-form {
     float: left;
@@ -64,6 +72,7 @@ form a {
     background-color: rgb(20,130,212);
     color: white;
     border: none;
+    transition: color .2s ease, background-color .3s ease;
 }
 a {
     text-decoration: none;
@@ -82,4 +91,11 @@ footer a:nth-child(1) {
 footer span:nth-child(2),
 footer span:nth-child(3) {
     float: right;
+}
+footer span:nth-child(3):after {
+    content: '';
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    background: url(../img/phone.png) no-repeat;
 }
