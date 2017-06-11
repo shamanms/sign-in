@@ -4,28 +4,28 @@
     <title>Sign In</title>
     <meta name="charset" content="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="vendor/normalize/normalize.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <!--font-->
     <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-    <div class="sign">
-        <article class="sign-inner">
-            <header class="sign-header clearfix">
-                <h1>Please Sign In</h1>
-                <span>Secure</span>
-            </header>
+    <article class="sign">
+        <header class="sign-header clearfix">
+            <h1>Please Sign In</h1>
+            <span>Secure</span>
+        </header>
+        <div class="sign-main clearfix">
             <div class="sign-form clearfix">
                 <form action="">
                     <h2>Sign in to Apple Store</h2>
-                    <input type="text">
-                    <input type="password">
-                    <a href="">Forgot your Apple ID or Password?</a>
-                    <button>Sign In</button>
+                    <input type="text" class="form-control" placeholder="Apple ID*">
+                    <input type="password" class="form-control" placeholder="Password*">
+                    <a href="#">Forgot your Apple ID or<br> Password?</a>
+                    <button class="btn btn-default" type="submit">Sign In</button>
                 </form>
             </div>
-            <div class="info">
-                <h3>You can use your Apple ID for other Apple services such as</h3>
+            <div class="sign-info">
+                <h2>You can use your Apple ID for other Apple services such as</h2>
                 <ul>
                     <li>App Store</li>
                     <li>iTunes Store</li>
@@ -34,12 +34,13 @@
                 </ul>
                 <a href="">Don't have an Apple ID? Create one now.</a>
             </div>
-            <footer class="sign-footer">
-                <span>Cancel</span>
-                <span>Questions? Just ask.</span>
-                <span>1-800-MY-APPLE</span>
-            </footer>
-        </article>
-    </div>
+        </div>
+        <footer class="sign-footer clearfix">
+            <a href="#">Cancel</a>
+            <span>1-800-MY-APPLE</span>
+            <span>Questions? Just ask.</span>
+        </footer>
+    </article>
 </body>
+
 </html>
